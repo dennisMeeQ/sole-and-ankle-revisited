@@ -62,8 +62,9 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1.5rem, 7vw - 3.5rem, 3rem);
   margin: 0px 48px;
+  overflow-x: auto;
 
   @media ${QUERIES.tabletAndDown} {
     display: none;
@@ -97,6 +98,7 @@ const NavLink = styled.a`
   text-decoration: none;
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
+  white-space: nowrap;
 
   &:first-of-type {
     color: ${COLORS.secondary};
