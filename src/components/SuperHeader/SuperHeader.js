@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS, QUERIES } from '../../constants';
+import { QUERIES } from '../../constants';
 
 import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
@@ -25,7 +25,7 @@ const SuperHeader = () => {
 };
 
 const Wrapper = styled.div`
-  background-color: ${COLORS.gray[900]};
+  background-color: var(--color-gray-900);
 
   @media ${QUERIES.tabletAndDown} {
     min-height: 4px;
@@ -37,7 +37,7 @@ const Content = styled.div`
   align-items: center;
   gap: 24px;
   font-size: 0.875rem;
-  color: ${COLORS.gray[300]};
+  color: var(--color-gray-300);
   height: 40px;
   padding-left: 32px;
   padding-right: 32px;
@@ -48,7 +48,7 @@ const Content = styled.div`
 `;
 
 const MarketingMessage = styled.span`
-  color: ${COLORS.white};
+  color: var(--color-white);
   margin-right: auto;
 `;
 
