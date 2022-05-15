@@ -17,7 +17,7 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
   return (
     <Wrapper>
       <Overlay isOpen={isOpen} onDismiss={onDismiss}>
-        <Content>
+        <Content aria-label="Navigation">
           <Side />
           <Nav>
             <NavLink href="/sale">Sale</NavLink>
